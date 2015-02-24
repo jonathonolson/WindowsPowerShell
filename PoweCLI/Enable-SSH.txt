@@ -1,0 +1,9 @@
+Get-VMHost | Foreach {
+  Start-VMHostService -HostService ($_ | Get-VMHostService | Where { $_.Key -eq "TSM-SSH"} )
+}
+
+#See if it's running
+
+Get-VMHost | Foreach {
+  Start-VMHostService -HostService ($_ | Get-VMHostService | Where { $_.Key -eq "TSM-SSH"} )
+}
