@@ -1,4 +1,4 @@
-﻿$url = "mail.braun-butler.com"
+﻿$url = "mail.domain.com"
 if ( (Get-PSSnapin -Name Microsoft.Exchange.Management.PowerShell.Admin -ErrorAction SilentlyContinue) -eq $null )
 {
     Add-PsSnapin Microsoft.Exchange.Management.PowerShell.Admin
